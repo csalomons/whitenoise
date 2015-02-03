@@ -167,7 +167,7 @@ class WhiteNoise(object):
 
     def add_cors_headers(self, static_file, url):
         if self.allow_all_origins:
-            static_file.headers['Access-Control-Allow-Origin'] = '*'
+            static_file.headers['Access-Control-Allow-Origin'] = 'preview.sendoutcards.com'
 
     def add_extra_headers(self, static_file, url):
         """
